@@ -7,7 +7,8 @@ export function About() {
         <div className="about-page">
             <NavBar/>
             <header className="about--header">
-                <img src={process.env.PUBLIC_URL+'about-hero.png'}className="header--image"/>
+                <img src={process.env.PUBLIC_URL+'about-hero.png'} className="header--image"
+                alt="about-hero"/>
             </header>
             <main>
                 <h2 className="h2">
