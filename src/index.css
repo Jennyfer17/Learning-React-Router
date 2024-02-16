@@ -2,7 +2,8 @@
 
 body {
   margin: 0;
-  max-height: 100vh;
+  /* max-height: 100vh; */
+  height: 110vh;
   position: relative;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
@@ -24,7 +25,7 @@ nav>div {
 .home-page {
   padding-top: 0;
   background-image: url("../public/home-page-background.png");
-  height: 100vh;
+  height: 110vh;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -124,4 +125,7 @@ footer {
 a {
   text-decoration: none;
   color: black;
+}
+.vans-page {
+  height: 100vh;
 }
