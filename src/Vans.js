@@ -8,7 +8,7 @@ export function Vans() {
             <main>
                 <h2>Explore our van options</h2>
                 <div className="van">
-                    <img ></img>
+                    {/* <img ></img> */}
                     <span>
                         <p>Modest Explorer</p>
                         <p>$60/day</p>                       
