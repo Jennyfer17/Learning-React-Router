@@ -1,11 +1,11 @@
-import { NavBar } from "./NavBar"
-import { Footer } from "./Footer"
+// import { NavBar } from "./NavBar"
+// import { Footer } from "./Footer"
 import {Link} from 'react-router-dom'
 
 export function About() {
     return (
         <div className="about-page">
-            <NavBar/>
+            {/* <NavBar/> */}
             <header className="about--header">
                 <img src={process.env.PUBLIC_URL+'about-hero.png'} className="header--image"
                 alt="about-hero"/>
@@ -37,7 +37,7 @@ export function About() {
                     </Link>
                 </div>
             </main>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

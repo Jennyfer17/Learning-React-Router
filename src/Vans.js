@@ -1,24 +1,39 @@
-import { NavBar } from "./NavBar"
-import { Footer } from "./Footer"
+import {useEffect, useState} from 'react'
 
 export function Vans() {
-    return (
-        <div className="vans-page">
-            <NavBar/>
-            <main>
-                <h2>Explore our van options</h2>
-                <div className="van">
-                    {/* <img ></img> */}
-                    <span>
-                        <p>Modest Explorer</p>
-                        <p>$60/day</p>                       
-                    </span>
-                    <div className="vans-label">
-                        <p>Simple</p>
-                    </div>
+    const [vans, setVans] = useState([])
+
+    useEffect(
+      () => {
+        fetch('/api/vans')
+          .then(res => res.json())
+          .then(data => setVans(data.vans))
+      },
+      []
+    )
+
+  const van  = vans.map(
+    data => {
+        return (
+            <div className="van" key={data.id}>
+                <img src={process.env.PUBLIC_URL+data.imageUrl} alt="vans" className="vans-page--img"></img>
+                <span>
+                    <h3>{data.name}</h3>
+                    <p>${data.price}/day</p>                       
+                </span>
+                <div id={`vans-label-${data.type}`} className='vans-label'> 
+                    <p>{data.type}</p>
                 </div>
-            </main>
-            <Footer/>
+            </div>
+        )
+    }
+  )
+    return (
+        <div className='vans-page'>
+            <h2>Explore our van options</h2>
+            <div className='card-van'>
+                {van}
+            </div>
         </div>
     )
 }
