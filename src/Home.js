@@ -1,11 +1,8 @@
-// import { NavBar } from "./NavBar"
-// import { Footer } from "./Footer"
 import {Link} from 'react-router-dom'
 
 export function Home() {
     return (
         <div className="home-page">
-            {/* <NavBar /> */}
              <main>
             
             <h2>You got the travel plans, we<br/>got
@@ -15,9 +12,8 @@ export function Home() {
                 <br/>Rent the perfect van to make your perfect road trip. 
             </p>
 
-            <Link to='/van'><button className="home--button">Find your van</button></Link>
+            <Link to='/vans'><button className="home--button">Find your van</button></Link>
         </main>
-        {/* <Footer /> */}
         </div>
        
     )

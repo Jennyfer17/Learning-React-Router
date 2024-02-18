@@ -4,7 +4,7 @@ body {
   margin: 0;
   /* max-height: 100vh; */
   height: 110vh;
-  position: relative;
+  /* position: relative; */
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
 }
@@ -29,7 +29,7 @@ nav>div {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  position: relative;
+  /* position: relative; */
 }
 .home-page>main {
   color: #FFFFFF;
@@ -48,17 +48,6 @@ nav>div {
   font-weight: 800;
 }
 
-/* .home-page>main>button {
-  height: 4em;
-  width: 50vw;
-  margin-top: 40px;
-  color: #FFFFFF;
-  background-color: #FF8C38;
-  border: 1px solid #FF8C38;
-  font-weight: 700;
-  border-radius: 5px;
-  cursor: pointer;
-} */
 .home--button {
   height: 4em;
   width: 50vw;
@@ -88,9 +77,9 @@ footer {
 .about-page>main {
   height: 100vh;
 }
-.about-page {
+/* .about-page {
   position: relative;
-}
+} */
 
 .header--image {
   width: 100vw;
